@@ -23,7 +23,7 @@ const Login = () => {
   const dispatch = useDispatch();
 
   const changeEventHandler = (e) => {
-    setInput({ ...input, [e.target.name]: e.target.value });
+      setInput({ ...input, [e.target.name]: e.target.value });
   };
 
   const submitHandler = async (e) => {

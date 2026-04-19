@@ -1,0 +1,30 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug React (Vite)",
+      "type": "pwa-chrome",
+      "request": "launch",
+      "url": "http://localhost:5173",
+      "webRoot": "${workspaceFolder}/frontend",
+      "sourceMaps": true,
+      "resolveSourceMapLocations": [
+        "${workspaceFolder}/frontend/**",
+        "!**/node_modules/**"
+      ],
+      "skipFiles": [
+        "<node_internals>/**",
+        "**/node_modules/**",
+        "**/@vite/**",
+        "**/react-refresh/**",
+        "**/dist/**"
+      ],
+      "sourceMapPathOverrides": {
+        "webpack:///src/*": "${webRoot}/src/*",
+        "*/src/*": "${webRoot}/src/*",
+        "/src/*": "${webRoot}/src/*",
+        "/*": "${webRoot}/*"
+      }
+    }
+  ]
+}
